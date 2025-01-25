@@ -1,0 +1,16 @@
+[package]
+name = "sum_check"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+ark-bn254 = "0.5.0"
+ark-ff = "0.5.0"
+criterion = "0.5.1"
+fiat_shamir ={ path = "../fiat_shamir"}
+multilinear_polynomial ={ path = "../multilinear_polynomial"}
+univariate_polynomial = {path = "../univariate_polynomial"}
+
+[[bench]]
+name = "sum_check_benchmark"
+harness = false
